@@ -68,10 +68,41 @@
         opacity: 1;
     }
 }
+@keyframes safeAnimation{
+    from{
+        
+    }
+}
 
 
-@media screen and (max-width : 768px){
-    
+@media screen and (max-width : 1040px){
+    @keyframes sideCover3rd {
+        from{
+            top:70vh;
+        }
+        to {
+            top:45vw;
+        }
+    }
+    @keyframes rotateCover2nd{
+        0%{
+            right: -19vw;
+        }
+        50%{
+            right: -19vw;
+        }
+        100%{
+            right: -2vw;
+        }
+    }
+    @keyframes sideCover3rd {
+        from{
+            top:70vh;
+        }
+        to {
+            top:40vw;
+        }
+    }
 }
 @media screen and (max-width : 480px){
     @keyframes sideCover3rd {
@@ -80,6 +111,16 @@
         }
         to {
             top:45vw;
+        }
+    }
+    @keyframes title {
+        from {
+            top:45%;
+            opacity: 0;
+        }
+        to{
+            top:50%;
+            opacity: 1;
         }
     }
 }

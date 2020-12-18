@@ -1,5 +1,96 @@
-@media screen and (max-width : 768px){
+@media screen and (max-width : 1040px){
+    .navbar{
+        height:7vw;
+    }
+    .navbar a{
+        line-height: 7vw;
+        font-size: 3vw;
+        margin:1.5vw 5vw;   
+        width:18vw;
+        border-radius:10%;
+    }
+    .main-title{
+       padding: 25vw 3vw;
+    }
+    .main-title h1{
+        font-size: 6vw;
+    }
+    .sideCover {
+        height:140%;
+        width: 60%;
+        top:-19vw;
+        right: -19vw;
+        transform: rotate(30deg);
+
+    }
+    .two{ 
+        height:140%;
+        width: 60%;
+        top:-19vw;
+        right: -2vw;
+        transform: rotate(30deg);
+    }
     
+    .three{
+        top:40vw;
+        left:14vw;
+        width:50%;
+        animation: sideCover3rd 1s ease;
+        transform: rotate(-80deg);
+
+    }
+    .menu{
+        margin:1vh 0;
+        padding:2.7vw;
+        font-size: 2vw;
+    }
+    .logo img{
+        height:8vw;
+        width:30vw;
+    }
+    .produk-menu img{
+        height:100vh;
+        width:100vw;
+    }
+    /* ------------------------------ SECOND --------------------------------- */
+    .second-title h1{
+        font-size: 6vw;
+    }
+    .feature-text p{
+        font-size: 2.3vw;
+    }
+    .feature-text h1{
+        font-size: 4vw;
+    }
+    .logo-anim{
+        width:27vw;
+        height:27vw;
+    }
+    .in{
+        width:24vw;
+        height:24vw;
+    }
+
+    /* ------------------------------ THIRD --------------------------------- */
+    .third{
+        height: 130%;
+    }
+    .third h1, .third h3 ,.third h4{
+        font-size: 5.5vw;
+    }
+    .third h4, .buttons span{
+        font-size: 2.4vw;
+    }
+    .buttons a, .redirect{
+        height: 7vw;
+        width: 32vw;
+        font-size: 3vw;
+        line-height: 7vw;
+    }
+    .logo-footer img{
+        height:6vw;
+        width: 20vw;
+    }
 }
 @media screen and (max-width : 480px){
     .navbar{
@@ -17,7 +108,7 @@
     }
     .logo{
         left:50%;
-        animation: none;
+        animation: title .5s ease;
     }
     .logo img{
         height:15vw;

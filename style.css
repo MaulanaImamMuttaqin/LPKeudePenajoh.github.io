@@ -83,6 +83,7 @@ body, html{
     height:5vw;
     width:20vw;
 }
+
 .two{
     -webkit-box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);
@@ -116,9 +117,9 @@ body, html{
     margin:1vh 0;
     padding:1.5vw;
     -webkit-box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
-box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
-font-size: 1.15vw;
+    -moz-box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);    
+    font-size: 1.15vw;
 }
 
 .menu a{
@@ -236,6 +237,8 @@ font-size: 1.15vw;
     align-items: center;
     flex-flow: column;
     text-align: center;
+    animation: rotate 2s linear infinite;
+    animation-play-state: paused;
 }
 .logo-feature .feature-text{
     display:none;
@@ -252,14 +255,23 @@ font-size: 1.15vw;
     text-shadow: 3px 0px 7px #120907;
     color: rgb(227, 235, 242);
 }
+.logo-feature .fas {
+    font-size: 13vw;
+    transition: all .3s ease;
+}
+.logo-feature .fas:hover{
+    font-size: 15vw;
+}
+
 .logo-anim{
     position:absolute;
     width:25vw;
     height:25vw;
-    background-color: rgba(73,73,210,1);
+    background-color: rgba(55, 55, 255, 0.9);
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-    animation: rotate 10s linear infinite;
-    
+    animation: rotate 7s linear infinite;
+    transition: all 0.2s;
+    transform-origin:center center;
 }
 .in{
     width:20vw;
@@ -268,25 +280,70 @@ font-size: 1.15vw;
     animation: rotate 10s linear infinite;
     animation-direction: reverse;
 }
-.logo-feature .fas {
-    font-size: 13vw;
-    transition: all .3s ease;
-}
-.logo-feature .fas:hover ~ .logo-anim{
+
+.f1 .fas:hover ~ .logo-anim{
     animation-duration: 2s;
 }
-.logo-feature .fas:hover{
-    font-size: 15vw;
-}
+/* buat feature 2 */
 
+.f2 .out{
+    width:28vw;
+    height:28vw;
+    border-radius: 50%;
+    background-color: white;
+    border-left:10px solid rgb(255, 255, 255);
+    border-right:10px solid rgb(255, 255, 255);
+    clip-path: unset;
+    animation-direction: reverse;
+}
+.f2 .in{
+    width:20vw;
+    height:20vw;
+    border-radius: 50%;
+    background-color: white;
+    border-top:16px solid rgba(55, 55, 255, 0.9);
+    clip-path: unset;
+}
+.f2 .mid{
+    width:24vw;
+    height:24vw;
+    border-radius: 50%;
+    background-color: white;
+    border-bottom:16px solid rgba(55, 55, 255, 0.9);
+    clip-path: unset;
+}
+.f2 .fas:hover ~ .logo-anim{
+    border-left:10px solid rgba(55, 55, 255, 0.9);
+    border-right:10px solid rgba(55, 55, 255, 0.9);
+}
 .f2 .logo-feature{
     float:left;
 }
 .f2 .feature-text{
     float:right;
 }
+/* buat fiture 3 */
+
+.f3 .fas{
+    position:absolute;
+}
+.f3 .fa-users{
+    opacity: 0;
+}
 
 
+.logo-feature:hover .fa-user{
+    opacity: 0;
+    font-size: 10vw;
+}
+.logo-feature:hover .fa-users{
+    opacity: 1;
+
+}
+
+
+
+/* ------------------------------ THIRD --------------------------------- */
 .third{
     height:160%;
     background: rgb(12,4,148);
