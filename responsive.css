@@ -1,0 +1,103 @@
+@media screen and (max-width : 768px){
+    
+}
+@media screen and (max-width : 480px){
+    .navbar{
+        height:7vw;
+    }
+    .navbar a{
+        line-height: 7vw;
+        font-size: 3vw;
+        margin:1.5vw 5vw;   
+        width:18vw;
+        border-radius:10%;
+    }
+    .main-title, .two, .logo-feature .fas{
+        display: none;
+    }
+    .logo{
+        left:50%;
+        animation: none;
+    }
+    .logo img{
+        height:15vw;
+        width:60vw;
+    }
+    .three{
+        width:20vh;
+        animation: s;
+        top:45vw;
+        animation: sideCover3rd 1s ease;
+    }
+      /* ------------------------------ SECOND --------------------------------- */
+      .second{
+        width:100%;
+    }
+    .second-title h1{
+        font-size: 10vw;
+        
+    }
+    .feature{
+        width:100vw;
+        height:40vh;
+        position: unset;
+    }
+    .logo-feature{
+        width:100%;
+    }
+    .logo-feature .feature-text{
+        display:block;
+        height: auto;
+        z-index: 2;
+    }
+    .feature-text p{
+        font-size: 4vw;
+    }
+    .feature-text h1{
+        font-size: 6vw;
+    }
+    .logo-anim{
+        width:65vw;
+        height:65vw;
+        margin:0;
+    }
+    .feature-text{
+        display: none;
+    }
+    .in{
+        width:55vw;
+        height:55vw;
+    }
+    
+/* ------------------------------ THIRD --------------------------------- */
+    .third h1, .third h3 ,.third h4{
+        font-size: 6vw;
+        color: rgb(227, 235, 242);
+    }
+        .third h3{
+        font-size: 5vw;
+    }
+        .third h4, .buttons span{
+        font-size: 4vw;
+    }
+    .buttons span{
+        display: block;
+    }
+    .buttons a, .redirect{
+        height: 15vw;
+        width: 80vw;
+        font-size: 6vw;
+        line-height: 16vw;
+        margin:5vw;
+    }
+
+    .footer {
+        height:32vw;
+    }
+    .logo-footer img{
+        position: absolute;
+        height:7vw;
+        width:30vw;
+    }
+    
+}

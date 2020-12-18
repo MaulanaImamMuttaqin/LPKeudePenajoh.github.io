@@ -9,7 +9,7 @@ body, html{
 
 /* ------------------------------ MAIN --------------------------------- */
 .navbar{
-    height:6vh;
+    height:3vw;
     width: 100%;
     position:fixed;
     z-index: 1;
@@ -25,13 +25,13 @@ body, html{
     background-color: none;
     height: 100%;
     text-align: center;
-    margin:3vh 10vw;
+    margin:1.5vw 10vw;
     width:7%;
     display: inline-block;
     text-decoration: none;
     color: rgb(227, 235, 242);
     font-weight: bolder;
-    line-height: 6vh;
+    line-height: 3vw;
     border-radius:20%;
     -webkit-box-shadow: -1px 1px 17px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 17px -9px rgba(0,0,0,0.75);
@@ -60,7 +60,7 @@ body, html{
     position: absolute;
     color: rgb(227, 235, 242);
     background-color: rgba(255, 255, 255,0);
-    padding: 20vh 7vw;
+    padding: 10vw 7vw;
     text-shadow: 3px 0px 7px #5B2718;
     animation: imageShow .3s ease;
 }
@@ -73,14 +73,15 @@ body, html{
     background: rgb(106,181,247);
     background: linear-gradient(105deg, rgba(106,181,247,1) 0%, rgba(223,238,251,1) 66%); 
     position: absolute;
-    top:-19vh;
+    top:-9.5vw;
     right: -19vw;
     transform: rotate(30deg);
     animation: rotateCover 1s ease ;
     z-index: 2;
 }
 .logo img{
-    height:10vh;
+    height:5vw;
+    width:20vw;
 }
 .two{
     -webkit-box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);
@@ -95,7 +96,7 @@ body, html{
 }
 
 .three {
-    top:30vh;
+    top:15vw;
     left:14vw;
     width:25%;
     animation: sideCover3rd 1s ease;
@@ -113,7 +114,7 @@ body, html{
 .menu{
     transform:rotate(-30deg) skewX(-30deg) ;
     margin:1vh 0;
-    padding:3vh;
+    padding:1.5vw;
     -webkit-box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
 box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
@@ -193,27 +194,24 @@ font-size: 1.15vw;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    
 }
 
 .second-title {
-    margin: 4.5vh 0;
+    margin: 2.25vw 0;
+    text-align: center;
+    margin-bottom:10vw;
 }
 .second-title h1{
     font-size: 3vw;
     
 }
 .feature{
-    position: relative;
     width: 65vw;
-    height: 38vh;
-    margin:4vw;
+    height: 19vw;
+    margin-bottom:20vw;
 }
-.f1, .f3{
-    left:13vw;
-}
-.f2 {
-    right:13vw;
-}
+
 
 .logo-feature, .feature-text{
     height:100%;
@@ -239,6 +237,9 @@ font-size: 1.15vw;
     flex-flow: column;
     text-align: center;
 }
+.logo-feature .feature-text{
+    display:none;
+}
 .logo-feature i{
     color: rgb(84, 138, 255);
 }
@@ -251,20 +252,31 @@ font-size: 1.15vw;
     text-shadow: 3px 0px 7px #120907;
     color: rgb(227, 235, 242);
 }
-.logo-anim-out, .logo-anim-in{
+.logo-anim{
     position:absolute;
     width:25vw;
     height:25vw;
     background-color: rgba(73,73,210,1);
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     animation: rotate 10s linear infinite;
+    
 }
-.logo-anim-in{
+.in{
     width:20vw;
     height:20vw;
     background-color: rgba(208, 212, 255, 1);
     animation: rotate 10s linear infinite;
     animation-direction: reverse;
+}
+.logo-feature .fas {
+    font-size: 13vw;
+    transition: all .3s ease;
+}
+.logo-feature .fas:hover ~ .logo-anim{
+    animation-duration: 2s;
+}
+.logo-feature .fas:hover{
+    font-size: 15vw;
 }
 
 .f2 .logo-feature{
@@ -318,7 +330,8 @@ font-size: 1.15vw;
 }
 
 .buttons a:hover, .redirect:hover{
-    background-color:  rgba(73,73,210,.8)
+    background-color:  rgba(73,73,210,.8);
+    cursor: pointer;
 }
 .buttons a:active, .redirect:active{
     top:6px;
@@ -331,7 +344,7 @@ font-size: 1.15vw;
     right:0;
     bottom:0;
     width: 100vw;
-    height:32vh;
+    height:16vw;
 }
 .logo-footer{
     position: relative;

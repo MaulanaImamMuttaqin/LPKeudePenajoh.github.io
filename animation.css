@@ -69,3 +69,17 @@
     }
 }
 
+
+@media screen and (max-width : 768px){
+    
+}
+@media screen and (max-width : 480px){
+    @keyframes sideCover3rd {
+        from{
+            top:70vh;
+        }
+        to {
+            top:45vw;
+        }
+    }
+}
