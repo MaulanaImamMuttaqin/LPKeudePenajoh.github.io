@@ -1,0 +1,346 @@
+body, html{
+    width:100%;
+    height:100%;
+    margin: 0;
+    font-family: 'B612';
+    letter-spacing: 1px;
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------ MAIN --------------------------------- */
+.navbar{
+    height:6vh;
+    width: 100%;
+    position:fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s;
+    padding:1vh 0;
+    z-index:2;
+}
+
+.navbar a{
+    background-color: none;
+    height: 100%;
+    text-align: center;
+    margin:3vh 10vw;
+    width:7%;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(227, 235, 242);
+    font-weight: bolder;
+    line-height: 6vh;
+    border-radius:20%;
+    -webkit-box-shadow: -1px 1px 17px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 17px -9px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 17px -9px rgba(0,0,0,0.75);
+    transition: all .2s;
+    text-shadow: 3px 0px 7px #5B2718;
+    font-size: 1vw;
+}
+
+.navbar a:hover{
+    background-color: rgba(106,181,247, 1);
+}
+
+.main {
+    width:100%;
+    height:100%;
+    background: rgb(12,4,148);
+    background: linear-gradient(135deg, rgba(12,4,148,1) 0%, rgba(73,73,210,1) 35%, rgba(0,212,255,1) 100%);
+    overflow: hidden;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    animation: clipPathAnim 1s ease;
+}
+
+.main-title{
+    position: absolute;
+    color: rgb(227, 235, 242);
+    background-color: rgba(255, 255, 255,0);
+    padding: 20vh 7vw;
+    text-shadow: 3px 0px 7px #5B2718;
+    animation: imageShow .3s ease;
+}
+.main-title h1{
+    font-size: 3.5vw;
+}
+.sideCover {
+    height:140%;
+    width: 60%;
+    background: rgb(106,181,247);
+    background: linear-gradient(105deg, rgba(106,181,247,1) 0%, rgba(223,238,251,1) 66%); 
+    position: absolute;
+    top:-19vh;
+    right: -19vw;
+    transform: rotate(30deg);
+    animation: rotateCover 1s ease ;
+    z-index: 2;
+}
+.logo img{
+    height:10vh;
+}
+.two{
+    -webkit-box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);  
+    right:-9vw;
+    animation: rotateCover 1s ease, rotateCover2nd 2s ease;
+    background: rgb(106,181,247);
+    background: linear-gradient(105deg, rgba(106,181,247,0.3085609243697479) 0%, rgba(223,238,251,1) 100%);
+    z-index: 1;
+    padding: 0;
+}
+
+.three {
+    top:30vh;
+    left:14vw;
+    width:25%;
+    animation: sideCover3rd 1s ease;
+    background: rgb(106,181,247);
+    background: linear-gradient(105deg, rgba(106,181,247,0.3085609243697479) 0%, rgba(223,238,251,1) 100%);
+    transform: rotate(-80deg);
+}
+
+.two .menu-cont{
+    position: absolute;
+    top:50%;
+    
+}
+
+.menu{
+    transform:rotate(-30deg) skewX(-30deg) ;
+    margin:1vh 0;
+    padding:3vh;
+    -webkit-box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
+box-shadow: 0px 6px 12px -12px rgba(0,0,0,0.75);
+font-size: 1.15vw;
+}
+
+.menu a{
+    transform: skewX(30deg);
+    display: block;
+    text-decoration: none;
+    color: rgb(196, 222, 244);
+    text-shadow: 3px 0px 7px #5B2718;
+}
+
+.menu:hover{
+    background-color: rgba(194, 220, 242, 1);
+    cursor: pointer;
+
+}
+
+.logo{
+    z-index: 2;
+    position:absolute;
+    margin:0;
+    top:50%;
+    left:80%;
+    transform:  translate(-50%, -50%);
+    animation: title .5s ease;
+    font-size: larger;
+}
+
+.logo h3{
+    color: aliceblue;
+}
+
+.produk-menu{
+    position:relative;
+    left:0;
+}
+
+.produk-menu h1{
+    display:block;
+    position: absolute;
+    z-index: 2;
+    margin:0;
+    top:50%;
+    left:25%;
+    transform:  translate(-50%, -50%);
+}
+
+.produk-menu img{
+    height:100vh;
+    width:80vw;
+}
+
+.masakan{
+    display: none;
+}
+
+.minum{
+    display: none;
+}
+
+.kue{
+    display: none;
+}
+
+
+
+/* ------------------------------ SECOND --------------------------------- */
+
+.second{
+    height:auto;
+    margin:0;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.second-title {
+    margin: 4.5vh 0;
+}
+.second-title h1{
+    font-size: 3vw;
+    
+}
+.feature{
+    position: relative;
+    width: 65vw;
+    height: 38vh;
+    margin:4vw;
+}
+.f1, .f3{
+    left:13vw;
+}
+.f2 {
+    right:13vw;
+}
+
+.logo-feature, .feature-text{
+    height:100%;
+    width:55%;
+    float: left;
+}
+.feature-text{
+    text-align: center;
+}
+.feature-text p{
+    font-size: 1.5vw;
+}
+.feature-text h1{
+    font-size: 2vw;
+}
+.logo-feature{
+    position: relative;
+    width:44%;
+    float:right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    text-align: center;
+}
+.logo-feature i{
+    color: rgb(84, 138, 255);
+}
+.logo-feature i, .logo-feature h3{
+    position: relative;
+    z-index:1;
+    margin: 0;
+}
+.logo-feature h3{
+    text-shadow: 3px 0px 7px #120907;
+    color: rgb(227, 235, 242);
+}
+.logo-anim-out, .logo-anim-in{
+    position:absolute;
+    width:25vw;
+    height:25vw;
+    background-color: rgba(73,73,210,1);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    animation: rotate 10s linear infinite;
+}
+.logo-anim-in{
+    width:20vw;
+    height:20vw;
+    background-color: rgba(208, 212, 255, 1);
+    animation: rotate 10s linear infinite;
+    animation-direction: reverse;
+}
+
+.f2 .logo-feature{
+    float:left;
+}
+.f2 .feature-text{
+    float:right;
+}
+
+
+.third{
+    height:160%;
+    background: rgb(12,4,148);
+    background: linear-gradient(135deg, rgba(12,4,148,1) 0%, rgba(73,73,210,1) 35%, rgba(0,212,255,1) 100%);
+    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+}
+.third h1, .third h3 ,.third h4{
+    font-size: 3vw;
+    color: rgb(227, 235, 242);
+}
+.third h3{
+    font-size: 2vw;
+}
+.third h4, .buttons span{
+    font-size: 1vw;
+}
+.buttons{
+    color: rgb(227, 235, 242);
+    margin-bottom: 3vw;
+}
+.buttons a, .redirect{
+    color: rgb(227, 235, 242);
+    background-color: rgba(73,73,210,.1);
+    line-height: 4vw;
+    display: inline-block;
+    text-decoration: none;
+    height: 4vw;
+    width: 16vw;
+    border: .1px solid;
+    border-radius: 7%;
+    box-shadow: 0px 6px 0px 0px rgba(12,4,148,1);
+    transition: background-color 0.3s;
+    position:relative;
+    font-size: 1vw;
+}
+
+.buttons a:hover, .redirect:hover{
+    background-color:  rgba(73,73,210,.8)
+}
+.buttons a:active, .redirect:active{
+    top:6px;
+    box-shadow: none;
+}
+.footer{
+    position: absolute;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: white;
+    right:0;
+    bottom:0;
+    width: 100vw;
+    height:32vh;
+}
+.logo-footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.logo-footer img{
+    position: absolute;
+    top:50%;
+    right:5%;
+    height:10vh;
+}

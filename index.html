@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=B612' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/709b73d745.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <a onclick="ClickTo('main')" >Utama</a>
+        <a onclick="ClickTo('second')" >Fitur</a>
+        <a onclick="ClickTo('third')" >Mulai</a>
+    </div>
+    <div class="main" id="main">
+        <div class="main-title" id="main-title">
+            <h1>Situs Belanja Online <br> Jajanan Khas Aceh</h1>
+        </div>
+
+        <div class="sideCover"></div>
+
+        <div class="sideCover two">
+            <div class="menu-cont">
+                <div class="menu" onmouseover="showImage('masakan')" onmouseout="removeImage('masakan')"><a href="#">Makanan</a></div>
+                <div class="menu" onmouseover="showImage('kue')" onmouseout="removeImage('kue')"><a href="#">Kue-Kue</a></div>
+                <div class="menu" onmouseover="showImage('minum')" onmouseout="removeImage('minum')"><a href="#">Minuman</a></div>
+            </div>
+        </div>
+
+        <div class="sideCover three">
+
+        </div>
+
+        <div class="logo">
+            <img src="logo4.png" alt="" srcset="">
+        </div>
+
+        <div class="produk-menu masakan" id="masakan">
+            <img src="masakan.jpg" alt="">
+        </div>
+        <div class="produk-menu kue" id="kue">
+            <img src="kue.jpg" alt="">
+        </div>
+        <div class="produk-menu minum" id="minum">
+            <img src="minum.jpg" alt="">
+        </div>
+    </div>
+
+
+    <div class="second" id="second">
+        <div class="second-title">
+            <h1>Apa saja Keunggulan dari Website ini?</h1>
+        </div>
+        <div class="feature f1" id="f1">
+            <div class="feature-text">
+                <h1>Mudah Dipakai</h1>
+                <p>Website ini sangat mudah untuk digunakan, anda dapat menggunakan website ini tanpa adanya bantuan</p>
+            </div>
+            <div class="logo-feature">
+                <i class="fas fa-hand-point-up fa-9x"></i>
+
+                <div class="logo-anim-out"></div>
+                <div class="logo-anim-in"></div>
+            </div>
+           
+        </div>
+        <div class="feature f2" id="f2">
+            <div class="logo-feature">
+                <i class="fas fa-shield-alt fa-9x"></i>
+                
+                <div class="logo-anim-out"></div>
+                <div class="logo-anim-in"></div>
+            </div>
+            <div class="feature-text">
+                <h1>Aman</h1>
+                <p>Website ini sangat aman, anda tidak perlu mengkhawatirkan tentang pembobolan akun</p>
+            </div>
+            
+        </div>
+        <div class="feature f3" id="f3">
+            <div class="feature-text ">
+                <h1>Terpercaya</h1>
+                <p>Website ini sudah digunakan oleh 10.000+ pengguna</p>
+            </div>
+            <div class="logo-feature">
+                <i class="fa fa-users fa-9x" aria-hidden="true"></i>
+
+                <div class="logo-anim-out"></div>
+                <div class="logo-anim-in"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="third" id="third">
+        <h1>Promosikan Produk Anda Di <br> Keude Peunajoh</h1>
+        <h3>Daftarkan diri anda sekarang juga </h3>
+        <div class="buttons">
+            <a href="#"><i class="fab fa-google"></i> Google</a> <span>atau</span>
+            <a href="#"><i class="fab fa-facebook-square"></i> Facebook</a>
+        </div>
+
+        <h4>Sudah Punya Akun? <br> Silhkan Langsung Masuk Kesini</h4>
+
+        <a href="#" class="redirect">KeudePeunajoh</a>
+
+
+        <div class="footer">
+            <div class="logo-footer">
+                <img src="logo4.png" alt="">
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <script src="index.js" defer></script>
+</body>
+</html>

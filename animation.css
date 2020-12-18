@@ -1,0 +1,71 @@
+@keyframes rotateCover{
+    from{
+        transform: rotate(10deg);
+        height:160%;
+        width: 70%;
+
+    }
+    to{
+        transform: rotate(30deg);
+        height:140%;
+        width: 60%;
+    }
+}
+
+@keyframes clipPathAnim{
+    from{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+
+    }
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    }
+}
+
+@keyframes rotateCover2nd{
+    0%{
+        right: -19vw;
+    }
+    50%{
+        right: -19vw;
+    }
+    100%{
+        right:-9vw;
+    }
+}
+@keyframes sideCover3rd {
+    from{
+        top:50vh;
+    }
+    to {
+        top:30vh;
+    }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+  }
+
+@keyframes title {
+    from {
+        left:82%;
+        opacity: 0;
+    }
+    to{
+        left:80%;
+        opacity: 1;
+    }
+}
+
+@keyframes imageShow {
+    from {
+        left:-30px;
+        opacity: 0.5;
+    }
+    to {
+        left:0;
+        opacity: 1;
+    }
+}
+
