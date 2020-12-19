@@ -5,6 +5,7 @@ body, html{
     font-family: 'B612';
     letter-spacing: 1px;
     scroll-behavior: smooth;
+    position: relative;
 }
 
 /* ------------------------------ MAIN --------------------------------- */
@@ -45,6 +46,91 @@ body, html{
     background-color: rgba(106,181,247, 1);
 }
 
+
+/* .nav-controller{
+    position: fixed;
+    top: 50%;
+    left:-2vw;
+    z-index: 1;
+    transition: all .4s;
+    margin-top: -50%; 
+    width:25vw;  
+    height:25vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-controller .fas{
+    color: rgb(84, 138, 255);
+    font-size: 4vw;
+}
+.nav-controller:hover{
+    transform: rotate(180deg);
+    left:-1vw;
+    border-radius: 50%;
+    box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);  
+} */
+.nav-controller{
+    position: fixed;
+    width:25vw;  
+    height:25vw; 
+    border: 1px solid;
+    border-radius: 50%;
+    z-index: 1;
+    top:50%;
+    margin-top: -12.5vw;
+    /* left:-12vw */
+    
+}
+.nav-controller .arrow{
+    width:5vw;
+    height: 5vw;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position:relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.arrow{
+    transition: all .3s;
+}
+.arrow .fas{
+    font-size: 4vw;
+    color: rgb(84, 138, 255);
+
+}
+.arrow:hover{
+    transform: rotate(180deg);
+    left:50.5%;
+    top:40%;
+    box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);  
+}
+.control a{
+    text-align: center;
+    border:1px solid;
+    display: block;
+    border-radius: 50%;
+    width:5vw;
+    height: 5vw;
+    line-height: 5vw;
+    position: relative;
+}
+.control a:nth-child(1){
+    top:-30%;
+    left:70%;
+}
+.control a:nth-child(2){
+    left:80%;
+}
+.control a:nth-child(3){
+    left:70%;
+}
+
+
 .main {
     width:100%;
     height:100%;
@@ -77,11 +163,12 @@ body, html{
     right: -19vw;
     transform: rotate(30deg);
     animation: rotateCover 1s ease ;
-    z-index: 2;
+    z-index: 3;
 }
 .logo img{
     height:5vw;
     width:20vw;
+
 }
 
 .two{
@@ -92,7 +179,7 @@ body, html{
     animation: rotateCover 1s ease, rotateCover2nd 2s ease;
     background: rgb(106,181,247);
     background: linear-gradient(105deg, rgba(106,181,247,0.3085609243697479) 0%, rgba(223,238,251,1) 100%);
-    z-index: 1;
+    z-index: 2;
     padding: 0;
 }
 
@@ -137,7 +224,7 @@ body, html{
 }
 
 .logo{
-    z-index: 2;
+    z-index: 3;
     position:absolute;
     margin:0;
     top:50%;
@@ -167,8 +254,64 @@ body, html{
 }
 
 .produk-menu img{
+    position: absolute;
     height:100vh;
     width:80vw;
+    box-shadow: 3px 3px 23px -6px rgba(0,0,0,0.75);
+}
+.kue img, .minum img, .masakan img{
+    border-radius: 5%;
+    opacity: .9;
+    transition: all .2s;
+}
+.kue .kue1, .minum .minum1 , .masakan .masak2{
+    top:2vw;
+    left:2vw;
+    height: 22vw;
+    width: 35vw;
+}
+.kue .kue2, .minum .minum2, .masakan .masak3{
+    top:12vw;
+    left:26vw;
+    height: 15vw;
+    width: 30vw;
+
+}
+.kue .kue3, .minum .minum3, .masakan .masak1{
+    top:20vw;
+    left:1vw;
+    height: 15vw;
+    width: 30vw;
+
+}
+.kue .kue4, .masakan .masak4{
+    top:30vw;
+    left:26vw;
+    height: 15vw;
+    width: 30vw;
+}
+.kue .kue5{
+    top:3vw;
+    left:36vw;
+    height: 15vw;
+    width: 30vw;
+}
+.kue .kue6{
+    top:30vw;
+    left:.2vw;
+    height: 15vw;
+    width: 30vw;
+}
+
+
+
+.kue1:hover, .kue2:hover, .kue3:hover, .kue4:hover, .kue5:hover, .kue6:hover,
+.minum1:hover, .minum2:hover, .minum3:hover,
+.masak1:hover, .masak2:hover , .masak3:hover, .masak4:hover
+{
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1.05,1.05);
 }
 
 .masakan{
@@ -270,7 +413,7 @@ body, html{
     background-color: rgba(55, 55, 255, 0.9);
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     animation: rotate 7s linear infinite;
-    transition: all 0.2s;
+    transition: all .5s;
     transform-origin:center center;
 }
 .in{
@@ -323,7 +466,16 @@ body, html{
     float:right;
 }
 /* buat fiture 3 */
-
+.f3 .logo-anim{
+    clip-path: unset;
+    width:23vw;
+    height:23vw;
+    border-radius: 5%;
+}
+.f3 .in{
+    width:20vw;
+    height:20vw;
+}
 .f3 .fas{
     position:absolute;
 }
@@ -336,9 +488,12 @@ body, html{
     opacity: 0;
     font-size: 10vw;
 }
+.f3 .fas:hover ~ .logo-anim{
+   border-radius: 30%;
+}
 .logo-feature:hover .fa-users{
     opacity: 1;
-
+    font-size: 10vw;
 }
 
 

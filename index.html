@@ -16,6 +16,16 @@
         <a onclick="ClickTo('second')" >Fitur</a>
         <a onclick="ClickTo('third')" >Mulai</a>
     </div>
+    <div class="nav-controller">
+        <div class="arrow">
+            <i class="fas fa-angle-right"></i>
+        </div>
+        <div class="control">
+            <a onclick="ClickTo('main')" >Utama</a>
+            <a onclick="ClickTo('second')" >Fitur</a>
+                <a onclick="ClickTo('third')" >Mulai</a>
+        </div>
+    </div>
     <div class="main" id="main">
         <div class="main-title" id="main-title">
             <h1>Situs Belanja Online <br> Jajanan Khas Aceh</h1>
@@ -39,14 +49,24 @@
             <img src="logo4.png" alt="" srcset="">
         </div>
 
-        <div class="produk-menu masakan" id="masakan">
-            <img src="masakan.jpg" alt="">
+        <div class="produk-menu masakan" id="masakan"  onmouseover="showImage('masakan')" onmouseout="removeImage('masakan')">
+            <img class="masak1" src="image/masak1.jpg" alt="">
+            <img class="masak2" src="image/masak2.jpg" alt="">
+            <img class="masak3" src="image/masak3.jpg" alt="">
+            <img class="masak4" src="image/masak4.jpg" alt="">
         </div>
-        <div class="produk-menu kue" id="kue">
-            <img src="kue.jpg" alt="">
+        <div class="produk-menu kue" id="kue" onmouseover="showImage('kue')" onmouseout="removeImage('kue')">
+            <img class="kue1" src="image/makan1.jpg" alt="">
+            <img class="kue2" src="image/makan2.jpg" alt="">
+            <img class="kue3" src="image/makan3.jpg" alt="">
+            <img class="kue4" src="image/makan4.jpg" alt="">
+            <img class="kue5" src="image/makan5.jpg" alt="">
+            <img class="kue6" src="image/makan6.jpg" alt="">
         </div>
-        <div class="produk-menu minum" id="minum">
-            <img src="minum.jpg" alt="">
+        <div class="produk-menu minum" id="minum" onmouseover="showImage('minum')" onmouseout="removeImage('minum')">
+            <img class="minum1" src="image/minum1.jpg" alt="">
+            <img class="minum2" src="image/minum2.jpg" alt="">
+            <img class="minum3" src="image/minum3.jpg" alt="">
         </div>
     </div>
 
