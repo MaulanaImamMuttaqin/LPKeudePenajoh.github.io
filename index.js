@@ -141,7 +141,7 @@ function ClickTo(param){
     if(param == "second"){
         topVal = main;
     }else if(param == "third"){
-        topVal = main + second + 1/5* third;
+        topVal = main + second + 1/4* third;
     }
     window.scrollTo({
         top: topVal,
