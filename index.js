@@ -102,18 +102,34 @@ let f2 = document.querySelector("#f2");
 let f3 = document.querySelector("#f3");
 let footer = document.querySelector(".logo-footer img");
 let foot = document.querySelector(".footer")
+
 document.addEventListener('scroll', function(){
+    
     if(checkVis(f3)){
         f3.style.visibility = "visible"
         f3.style.opacity = "1"
+        f3.style.transform = "scale(1,1)"
     }else if(checkVis(f2)){
         f2.style.visibility = "visible"
         f2.style.opacity = "1"
+        f2.style.transform = "scale(1,1)"
     }else if(checkVis(f1)){
         f1.style.visibility = "visible"
         f1.style.opacity = "1"
+        f1.style.transform = "scale(1,1)"
     }else if(checkVis(footer)){
-        foot.style.clipPath = "polygon(100% 100%, 0% 100%, 100% 0)"
+        // foot.style.clipPath = "polygon(0 100%, 100% 100%, 100% 0, 0 50%)"
+    }else{
+        f3.style.visibility = "hidden"
+        f3.style.opacity = "0"
+        f3.style.transform = "scale(.8,.8)"
+        f2.style.visibility = "hidden"
+        f2.style.opacity = "0"
+        f2.style.transform = "scale(.8,.8)"
+        f1.style.visibility = "hidden"
+        f1.style.opacity = "0"
+        f1.style.transform = "scale(.8,.8)"
+        // foot.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
     }
 })
 
@@ -125,7 +141,7 @@ function ClickTo(param){
     if(param == "second"){
         topVal = main;
     }else if(param == "third"){
-        topVal = main + second + 1/6* third;
+        topVal = main + second + 1/5* third;
     }
     window.scrollTo({
         top: topVal,

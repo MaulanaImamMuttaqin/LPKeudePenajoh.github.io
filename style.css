@@ -284,10 +284,11 @@ body, html{
 .feature{
     width: 65vw;
     height: 19vw;
-    margin-bottom:20vw;
+    margin-bottom:15vw;
     opacity: 0;
     visibility: hidden;
-    transition: opacity .4s;
+    transition: all .4s;
+    transform: scale(.8,.8);
 }
 
 
@@ -433,17 +434,21 @@ body, html{
 
 
 /* ------------------------------ THIRD --------------------------------- */
+
 .third{
-    height:160%;
+    height:170%;
     background: rgb(12,4,148);
     background: linear-gradient(135deg, rgba(12,4,148,1) 0%, rgba(73,73,210,1) 35%, rgba(0,212,255,1) 100%);
-    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+    shape-outside: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
     text-align: center;
     display: flex;
     align-items: center;
+    float:left;
     justify-content: center;
     flex-flow: column;
     position: relative;
+    border:1px solid;
 }
 .third h1, .third h3 ,.third h4{
     font-size: 3vw;
@@ -473,6 +478,7 @@ body, html{
     transition: background-color 0.3s;
     position:relative;
     font-size: 1vw;
+    transition: top .3s;
 }
 
 .buttons a:hover, .redirect:hover{
@@ -483,16 +489,36 @@ body, html{
     top:6px;
     box-shadow: none;
 }
+/* ------------------------------ THIRD --------------------------------- */
+.footer-container{
+    position: relative;
+    border:1px solid;
+    height: 50%;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 50%);
+    shape-outside: polygon(0 100%, 100% 100%, 100% 0, 0 50%);
+}
 .footer{
     position: absolute;
-    clip-path: polygon(100% 100%, 0% 100%, 100% 100%);
+    
+    border:1px solid;
     background-color: white;
     right:0;
     bottom:0;
     width: 100vw;
-    height:16vw;
+    height:25vw;
     transition: clip-path .4s;
 }
+.footer P, .footer h3 , .footer i{
+    transition: all .1s;
+} 
+.footer P:hover, .footer h3:hover , .footer i:hover{
+    text-shadow: 1px 5px 6px rgba(0,0,0,0.7);
+    cursor: pointer;
+} 
+
+
+
+
 .logo-footer{
     position: relative;
     width: 100%;
@@ -500,7 +526,62 @@ body, html{
 }
 .logo-footer img{
     position: absolute;
-    top:50%;
+    top:20%;
     right:5%;
     height:10vh;
+}
+
+.social-media{
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    right:5%;
+}
+.social-media .fab{
+    font-size: 4vw;
+    margin: 0 1vw;
+}
+
+.social-media .fa-facebook{
+    color:rgb(59,89,152);
+}
+.social-media .fa-instagram{
+    color:rgb(233, 89, 80);
+}
+.social-media .fa-twitter{
+    color:rgb(29, 161, 242);
+}
+.social-media .fa-linkedin-in{
+    color: #0000EE;
+}
+
+
+.hubungi, .tentang, .tutorial{
+    width:15vw;
+    height:auto;
+    position:absolute;
+    top:30%;
+    left:50%;
+
+}
+.hubungi h3, .hubungi p, .tentang h3, .tutorial h3{
+    color: black;
+}
+.hubungi p, .tentang p, .tutorial h3{
+    font-size: 1vw;
+}
+.hubungi h3, .tentang h3, .tutorial h3{
+    font-size: 1.3vw;
+    padding-bottom: .3vw;
+    line-height: 1.3vw;
+}
+
+.tentang{
+    top:40%;
+    left:30%;
+}
+
+.tutorial{
+    top:50%;
+    left:10%;
 }
