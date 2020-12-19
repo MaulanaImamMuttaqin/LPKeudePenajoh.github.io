@@ -79,6 +79,7 @@ body, html{
     z-index: 1;
     top:50%;
     margin-top: -12.5vw;
+    
     /* left:-12vw */
     
 }
@@ -90,10 +91,9 @@ body, html{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    position:relative;
-    left:50%;
+    position: fixed;
     top:50%;
-    transform: translate(-50%,-50%);
+    left: 50%;
 }
 .arrow{
     transition: all .3s;
@@ -109,6 +109,17 @@ body, html{
     top:40%;
     box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);  
 }
+.control{
+    width:5vw;
+    height: 5vw;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    top:50%;
+}
 .control a{
     text-align: center;
     border:1px solid;
@@ -117,10 +128,10 @@ body, html{
     width:5vw;
     height: 5vw;
     line-height: 5vw;
-    position: relative;
+    display:none;
 }
 .control a:nth-child(1){
-    top:-30%;
+    
     left:70%;
 }
 .control a:nth-child(2){
