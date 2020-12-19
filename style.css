@@ -9,93 +9,18 @@ body, html{
 }
 
 /* ------------------------------ MAIN --------------------------------- */
-.navbar{
-    height:3vw;
-    width: 100%;
-    position:fixed;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .4s;
-    padding:1vh 0;
-    z-index:2;
-}
 
-.navbar a{
-    background-color: none;
-    height: 100%;
-    text-align: center;
-    margin:1.5vw 10vw;
-    width:7%;
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(227, 235, 242);
-    font-weight: bolder;
-    line-height: 3vw;
-    border-radius:20%;
-    -webkit-box-shadow: -1px 1px 17px -9px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 1px 17px -9px rgba(0,0,0,0.75);
-    box-shadow: -1px 1px 17px -9px rgba(0,0,0,0.75);
-    transition: all .2s;
-    text-shadow: 3px 0px 7px #5B2718;
-    font-size: 1vw;
-}
-
-.navbar a:hover{
-    background-color: rgba(106,181,247, 1);
-}
-
-
-/* .nav-controller{
-    position: fixed;
-    top: 50%;
-    left:-2vw;
-    z-index: 1;
-    transition: all .4s;
-    margin-top: -50%; 
-    width:25vw;  
-    height:25vw; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nav-controller .fas{
-    color: rgb(84, 138, 255);
-    font-size: 4vw;
-}
-.nav-controller:hover{
-    transform: rotate(180deg);
-    left:-1vw;
-    border-radius: 50%;
-    box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);  
-} */
-.nav-controller{
-    position: fixed;
-    width:25vw;  
-    height:25vw; 
-    border: 1px solid;
-    border-radius: 50%;
-    z-index: 1;
-    top:50%;
-    margin-top: -12.5vw;
-    
-    /* left:-12vw */
-    
-}
-.nav-controller .arrow{
+.arrow, .control a{
     width:5vw;
     height: 5vw;
-    border: 1px solid;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     position: fixed;
     top:50%;
-    left: 50%;
-}
-.arrow{
+    left: -2vw;
+    z-index: 1;
     transition: all .3s;
 }
 .arrow .fas{
@@ -104,41 +29,32 @@ body, html{
 
 }
 .arrow:hover{
-    transform: rotate(180deg);
-    left:50.5%;
-    top:40%;
-    box-shadow: -1px 1px 12px -8px rgba(0,0,0,0.75);  
+    background-color: rgb(177, 208, 255); 
 }
-.control{
-    width:5vw;
-    height: 5vw;
-    border: 1px solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    position: fixed;
-    top:50%;
-}
+
 .control a{
-    text-align: center;
-    border:1px solid;
-    display: block;
-    border-radius: 50%;
-    width:5vw;
-    height: 5vw;
-    line-height: 5vw;
-    display:none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    text-decoration: none;
+    color: rgb(227, 235, 242);
+    font-weight: bolder;
+    box-shadow: -1px 1px 12px -5px rgba(0,0,0,0.75); 
+    text-shadow: 3px 0px 7px #5B2718;
+    font-size: 1vw;
 }
+
 .control a:nth-child(1){
-    
-    left:70%;
+    top:40%;
+    left:3vw;
 }
 .control a:nth-child(2){
-    left:80%;
+    top:50%;
+    left:7vw;
 }
 .control a:nth-child(3){
-    left:70%;
+    top:60%;
+    left:3vw;
 }
 
 
@@ -251,7 +167,7 @@ body, html{
 
 .produk-menu{
     position:relative;
-    left:0;
+    height: 100vh;
 }
 
 .produk-menu h1{

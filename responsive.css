@@ -1,14 +1,17 @@
 @media screen and (max-width : 1040px){
-    .navbar{
-        height:7vw;
+  
+    .arrow, .control a{
+        width:12vw;
+        height:12vw;
     }
-    .navbar a{
-        line-height: 7vw;
+    .arrow .fas{
+        font-size: 7vw;
+    
+    }
+    .control a{
         font-size: 3vw;
-        margin:1.5vw 5vw;   
-        width:18vw;
-        border-radius:10%;
     }
+
     .main-title{
        padding: 25vw 3vw;
     }
@@ -151,15 +154,17 @@
     }
 }
 @media screen and (max-width : 480px){
-    .navbar{
-        height:7vw;
+
+    .arrow, .control a{
+        width:13vw;
+        height:13vw;
     }
-    .navbar a{
-        line-height: 7vw;
+    .arrow .fas{
+        font-size: 7vw;
+    
+    }
+    .control a{
         font-size: 3vw;
-        margin:1.5vw 5vw;   
-        width:18vw;
-        border-radius:10%;
     }
     .main-title, .two, .logo-feature .fas{
         display: none;
