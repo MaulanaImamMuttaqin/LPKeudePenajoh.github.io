@@ -10,8 +10,6 @@ function removeImage(gambar){
     document.getElementById(gambar).style.animation = "none";
 }
 
-
-
 function arrowClick(){
     let el = document.getElementById("arrow");
     let Ael = document.querySelectorAll(".control a");
@@ -88,7 +86,36 @@ function arrowClick(){
     }
    
 }
+const checkVis = function(element){
+    const el = element.getBoundingClientRect()
 
+    return (
+        el.top >= 0 &&
+        el.left >= 0 &&
+        el.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        el.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+let f1 = document.querySelector("#f1");
+let f2 = document.querySelector("#f2");
+let f3 = document.querySelector("#f3");
+let footer = document.querySelector(".logo-footer img");
+let foot = document.querySelector(".footer")
+document.addEventListener('scroll', function(){
+    if(checkVis(f3)){
+        f3.style.visibility = "visible"
+        f3.style.opacity = "1"
+    }else if(checkVis(f2)){
+        f2.style.visibility = "visible"
+        f2.style.opacity = "1"
+    }else if(checkVis(f1)){
+        f1.style.visibility = "visible"
+        f1.style.opacity = "1"
+    }else if(checkVis(footer)){
+        foot.style.clipPath = "polygon(100% 100%, 0% 100%, 100% 0)"
+    }
+})
 
 function ClickTo(param){
     let main = document.getElementById("main").getBoundingClientRect().height;
@@ -105,31 +132,3 @@ function ClickTo(param){
         behavior: 'smooth'
     })
 }
-
-// const f1 = document.querySelector("#f1");
-// const f2 = document.querySelector("#f2");
-// const f3 = document.querySelector("#f3");
-// console.log(document.getElementById("second").getBoundingClientRect())
-// console.log(document.getElementById("third").getBoundingClientRect())
-
-// document.addEventListener('scroll', function(){
-//     if(checkVis(f3)){
-//         console.log("feature 3 muncul")
-        
-//     }else if(checkVis(f2)){
-//         console.log("feature 2 muncul")
-//         console.log(f2.getBoundingClientRect())
-//     }else if(checkVis(f1)){
-//         console.log("feature 1 muncul")
-//     }
-// })
-// const checkVis = function(element){
-//     const el = element.getBoundingClientRect()
-
-//     return (
-//         el.top >= 0 &&
-//         el.left >= 0 &&
-//         el.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//         el.right <= (window.innerWidth || document.documentElement.clientWidth)
-//     );
-// }

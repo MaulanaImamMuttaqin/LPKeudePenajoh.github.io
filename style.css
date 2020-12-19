@@ -28,8 +28,9 @@ body, html{
     color: rgb(84, 138, 255);
 
 }
-.arrow:hover{
-    background-color: rgb(177, 208, 255); 
+.arrow:hover, .control a:hover{
+    background-color: rgba(177, 208, 255,.5);
+    cursor: pointer; 
 }
 
 .control a{
@@ -43,7 +44,10 @@ body, html{
     text-shadow: 3px 0px 7px #5B2718;
     font-size: 1vw;
 }
-
+.control a:hover{
+    background-color: rgba(177, 208, 255,1);
+ 
+}
 .control a:nth-child(1){
     top:40%;
     left:3vw;
@@ -281,6 +285,9 @@ body, html{
     width: 65vw;
     height: 19vw;
     margin-bottom:20vw;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s;
 }
 
 
@@ -478,12 +485,13 @@ body, html{
 }
 .footer{
     position: absolute;
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 100%, 0% 100%, 100% 100%);
     background-color: white;
     right:0;
     bottom:0;
     width: 100vw;
     height:16vw;
+    transition: clip-path .4s;
 }
 .logo-footer{
     position: relative;
