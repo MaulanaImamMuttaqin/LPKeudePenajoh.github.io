@@ -434,21 +434,17 @@ body, html{
 
 
 /* ------------------------------ THIRD --------------------------------- */
-
 .third{
-    height:170%;
+    height:200%;
     background: rgb(12,4,148);
     background: linear-gradient(135deg, rgba(12,4,148,1) 0%, rgba(73,73,210,1) 35%, rgba(0,212,255,1) 100%);
-    clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
-    shape-outside: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
     text-align: center;
     display: flex;
     align-items: center;
-    float:left;
     justify-content: center;
     flex-flow: column;
     position: relative;
-    border:1px solid;
 }
 .third h1, .third h3 ,.third h4{
     font-size: 3vw;
@@ -489,18 +485,10 @@ body, html{
     top:6px;
     box-shadow: none;
 }
-/* ------------------------------ THIRD --------------------------------- */
-.footer-container{
-    position: relative;
-    border:1px solid;
-    height: 50%;
-    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 50%);
-    shape-outside: polygon(0 100%, 100% 100%, 100% 0, 0 50%);
-}
+
 .footer{
     position: absolute;
-    
-    border:1px solid;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
     background-color: white;
     right:0;
     bottom:0;
@@ -584,4 +572,9 @@ body, html{
 .tutorial{
     top:50%;
     left:10%;
+}
+
+
+.footer-mobile{
+    display: none;
 }

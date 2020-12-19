@@ -134,6 +134,7 @@
 
     /* ------------------------------ THIRD --------------------------------- */
     .third{
+        clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
         height: 130%;
     }
     .third h1, .third h3 ,.third h4{
@@ -151,6 +152,64 @@
     .logo-footer img{
         height:6vw;
         width: 20vw;
+    }
+
+    /* footer */
+    .third .footer{
+        display: none;
+    }
+    .footer-mobile{
+        display:block;
+        height: auto;
+        margin-top: 10vw;
+        border-top:1px solid rgba(0, 0, 0, 0.598);
+        
+    }
+    .footer-mobile P, .footer-mobile h3 , .footer-mobile i{
+        transition: all .1s;
+    } 
+    .footer-mobile P:hover, .footer-mobile h3:hover , .footer-mobile i:hover{
+        text-shadow: 1px 5px 6px rgba(0,0,0,0.7);
+        cursor: pointer;
+    } 
+    .footer-mobile .mob-logo-footer{    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:7vw 0;
+    }
+    .footer-mobile .mob-logo-footer img{
+        height:10vw;
+        width:40vw;
+    }
+
+    .mob-hubungi, .mob-tentang{
+        text-align: center;
+        display: inline-block;
+        float: left;
+        width:50%;
+    }
+
+    .mob-tutorial, .mob-social-media{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+    .mob-social-media .fab{
+        font-size: 5vw;
+        margin: 0 3vw;
+    }
+    .mob-social-media .fa-facebook{
+        color:rgb(59,89,152);
+    }
+    .mob-social-media .fa-instagram{
+        color:rgb(233, 89, 80);
+    }
+    .mob-social-media .fa-twitter{
+        color:rgb(29, 161, 242);
+    }
+    .mob-social-media .fa-linkedin-in{
+        color: #0000EE;
     }
 }
 @media screen and (max-width : 480px){
@@ -228,6 +287,9 @@
     }
     
 /* ------------------------------ THIRD --------------------------------- */
+    .third{
+        clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+    }
     .third h1, .third h3 ,.third h4{
         font-size: 6vw;
         color: rgb(227, 235, 242);
@@ -249,75 +311,57 @@
         margin:5vw;
     }
 
-    .footer {
-        height:32vw;
+    
+    .third .footer{
+        display: none;
     }
-    .logo-footer img{
-        position: absolute;
-        height:7vw;
-        width:30vw;
+
+    
+    .footer-mobile{
+        display:block;
+        height: auto;
+        margin-top: 10vw;
+        border-top:1px solid rgba(0, 0, 0, 0.598);
         
     }
+    .footer-mobile P, .footer-mobile h3 , .footer-mobile i{
+        transition: all .1s;
+    } 
+    .footer-mobile P:hover, .footer-mobile h3:hover , .footer-mobile i:hover{
+        text-shadow: 1px 5px 6px rgba(0,0,0,0.7);
+        cursor: pointer;
+    } 
+    .footer-mobile .mob-logo-footer{    
+        padding:3vw 10vw;
+   
+    }
+    .footer-mobile .mob-logo-footer img{
+        height:10vw;
+        width:40vw;
+        
+    }
+    .footer-mobile, .mob-social-media, .mob-hubungi, .mob-tutorial, .mob-tentang{
+        
+    }
+    .mob-social-media, .mob-hubungi, .mob-tutorial, .mob-tentang{
+        text-align: center;
+        margin:15vw 0;
+    }
+    .mob-social-media .fab{
+        font-size: 13vw;
+        margin: 0 3vw;
+    }
+    .mob-social-media .fa-facebook{
+        color:rgb(59,89,152);
+    }
+    .mob-social-media .fa-instagram{
+        color:rgb(233, 89, 80);
+    }
+    .mob-social-media .fa-twitter{
+        color:rgb(29, 161, 242);
+    }
+    .mob-social-media .fa-linkedin-in{
+        color: #0000EE;
+    }
     
-    .social-media{
-    position: absolute;
-    z-index: 1;
-    top:50%;
-    right:5%;
-    display:none;
-}
-.social-media .fab{
-    font-size: 4vw;
-    margin: 0 1vw;
-}
-
-.social-media .fa-facebook{
-    color:rgb(59,89,152);
-}
-.social-media .fa-instagram{
-    color:rgb(233, 89, 80);
-}
-.social-media .fa-twitter{
-    color:rgb(29, 161, 242);
-}
-.social-media .fa-linkedin-in{
-    color: #0000EE;
-}
-
-
-.hubungi, .tentang, .tutorial{
-    width:15vw;
-    height:auto;
-    position:absolute;
-    top:30%;
-    left:50%;
-    display:none;
-}
-.hubungi{
-    display: block; 
-    border:1px solid;
-    width:90vw;
-    left:0;
-}
-.hubungi h3, .hubungi p, .tentang h3, .tutorial h3{
-    color: black;
-}
-.hubungi p, .tentang p, .tutorial h3{
-    font-size: 3vw;
-}
-.hubungi h3, .tentang h3, .tutorial h3{
-    font-size: 3.5vw;
-    padding-bottom: .3vw;
-    line-height: 1.3vw;
-}
-
-.tentang{
-    top:40%;
-    left:30%;
-}
-
-.tutorial{
-    top:50%;
-    left:10%;
-}
 }

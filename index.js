@@ -118,7 +118,7 @@ document.addEventListener('scroll', function(){
         f1.style.opacity = "1"
         f1.style.transform = "scale(1,1)"
     }else if(checkVis(footer)){
-        // foot.style.clipPath = "polygon(0 100%, 100% 100%, 100% 0, 0 50%)"
+        foot.style.clipPath = "polygon(0 100%, 100% 100%, 100% 0, 0 50%)"
     }else{
         f3.style.visibility = "hidden"
         f3.style.opacity = "0"
@@ -129,7 +129,7 @@ document.addEventListener('scroll', function(){
         f1.style.visibility = "hidden"
         f1.style.opacity = "0"
         f1.style.transform = "scale(.8,.8)"
-        // foot.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
+        foot.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
     }
 })
 
