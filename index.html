@@ -11,21 +11,17 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="navbar" id="navbar">
-        <a onclick="ClickTo('main')" >Utama</a>
-        <a onclick="ClickTo('second')" >Fitur</a>
-        <a onclick="ClickTo('third')" >Mulai</a>
-    </div>
-    <div class="nav-controller">
-        <div class="arrow">
+    <div class="navControl">
+        <div class="arrow" id="arrow" onclick="arrowClick()">
             <i class="fas fa-angle-right"></i>
         </div>
         <div class="control">
             <a onclick="ClickTo('main')" >Utama</a>
             <a onclick="ClickTo('second')" >Fitur</a>
-                <a onclick="ClickTo('third')" >Mulai</a>
+            <a onclick="ClickTo('third')" >Mulai</a>
         </div>
     </div>
+
     <div class="main" id="main">
         <div class="main-title" id="main-title">
             <h1>Situs Belanja Online <br> Jajanan Khas Aceh</h1>
