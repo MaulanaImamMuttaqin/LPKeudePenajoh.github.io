@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=B612' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/709b73d745.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="responsive.css">
-    <title>Document</title>
+    <title>KeudePeunajoh</title>
 </head>
 <body>
     <div class="navControl">
-        <div class="arrow" id="arrow" onclick="arrowClick()">
+        <div class="arrow" id="arrow" onClick="arrowClick()" >
             <i class="fas fa-angle-right"></i>
         </div>
         <div class="control">
-            <a onclick="ClickTo('main')" >Utama</a>
-            <a onclick="ClickTo('second')" >Fitur</a>
-            <a onclick="ClickTo('third')" >Mulai</a>
+            <a href="#main"><i class="fas fa-home"></i></a>
+            <a href="#second"><i class="fas fa-star"></i></a>
+            <a href="#third-container"><i class="fas fa-user-plus"></i></a>
         </div>
     </div>
 
@@ -32,7 +31,7 @@
         <div class="sideCover two">
             <div class="menu-cont">
                 <div class="menu" onmouseover="showImage('masakan')" onmouseout="removeImage('masakan')"><a href="#">Makanan</a></div>
-                <div class="menu" onmouseover="showImage('kue')" onmouseout="removeImage('kue')"><a href="#">Kue-Kue</a></div>
+                <div class="menu" onmouseover="showImage('kue')" onmouseout="removeImage('kue')"><a href="#">Kue</a></div>
                 <div class="menu" onmouseover="showImage('minum')" onmouseout="removeImage('minum')"><a href="#">Minuman</a></div>
             </div>
         </div>
@@ -130,17 +129,51 @@
             </div>
         </div>
     
-    <div class="third" id="third">
-        <h1>Promosikan Produk Anda Di <br> Keude Peunajoh</h1>
-        <h3>Daftarkan diri anda sekarang juga </h3>
-        <div class="buttons">
-            <a><i class="fab fa-google"></i> Google</a> <span>atau</span>
-            <a><i class="fab fa-facebook-square"></i> Facebook</a>
+    <div class="history">
+        
+        <div class="history-container">
+            <h1>Tentang Website Ini</h1>
+            <div class="hist h1">
+                <i class="fas fa-comment-dollar"></i>
+                <div class="hist-text">
+                    Website ini dapat membantu membuka peluang usaha bagi masyarakat Aceh yang membuat makanan atau jajan tradisional khas Aceh
+                </div>
+                
+                
+            </div>
+            <div class="hist h2">
+                <i class="fas fa-utensils"></i>
+                <div class="history-text">
+                    Membantu memperkenalkan makanan & jajanan khas Aceh ke pengunjung Kota, sehingga tidak tertutupi oleh makanan dari luar
+                </div>
+                
+                
+            </div>
+            <div class="hist h3">
+                <i class="fas fa-ad"></i>
+                <div class="history-text">
+                    Mempermudah penjual untuk mempromosikan produk mereka
+                </div>
+                
+               
+            </div>
         </div>
+    </div>
 
-        <h4>Sudah Punya Akun? <br> Silhkan Langsung Masuk Kesini</h4>
 
-        <a class="redirect">KeudePeunajoh</a>
+    <div class="third" id="third">
+        <div class="third-container" id="third-container">
+            <h1>Promosikan Produk Anda Di <br> Keude Peunajoh</h1>
+            <h3>Daftarkan diri anda sekarang juga </h3>
+            <div class="buttons">
+                <a><i class="fab fa-google"></i> Google</a> <span>atau</span>
+                <a><i class="fab fa-facebook-square"></i> Facebook</a>
+            </div>
+    
+            <h4>Sudah Punya Akun? <br> Silhkan Langsung Masuk Kesini</h4>
+    
+            <a class="redirect">KeudePeunajoh</a>
+        </div>
 
 
         <div class="footer" id="footer">

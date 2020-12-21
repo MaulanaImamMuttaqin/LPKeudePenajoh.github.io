@@ -1,7 +1,7 @@
 function showImage(gambar){
     document.getElementById("main-title").style.display="none";
     document.getElementById(gambar).style.display = "block";
-    document.getElementById(gambar).style.animation = "imageShow .3s ease";
+    document.getElementById(gambar).style.animation = "showAnim .3s ease";
    
 }
 function removeImage(gambar){
@@ -97,14 +97,17 @@ const checkVis = function(element){
     );
 }
 
+
+
 let f1 = document.querySelector("#f1");
 let f2 = document.querySelector("#f2");
 let f3 = document.querySelector("#f3");
+let foo_cont = document.querySelector(".third-container");
 let footer = document.querySelector(".logo-footer img");
 let foot = document.querySelector(".footer")
 
 document.addEventListener('scroll', function(){
-    
+    console.log(foo_cont.getBoundingClientRect().top);
     if(checkVis(f3)){
         f3.style.visibility = "visible"
         f3.style.opacity = "1"
@@ -132,19 +135,3 @@ document.addEventListener('scroll', function(){
         foot.style.clipPath = "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)"
     }
 })
-
-function ClickTo(param){
-    let main = document.getElementById("main").getBoundingClientRect().height;
-    let second = document.getElementById("second").getBoundingClientRect().height;
-    let third = document.getElementById("third").getBoundingClientRect().height;
-    let topVal = 0
-    if(param == "second"){
-        topVal = main;
-    }else if(param == "third"){
-        topVal = main + second + 1/4* third;
-    }
-    window.scrollTo({
-        top: topVal,
-        behavior: 'smooth'
-    })
-}

@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("http://fonts.googleapis.com/css?family=Cookie");
+
 body, html{
     width:100%;
     height:100%;
     margin: 0;
-    font-family: 'B612';
+    font-family: 'Nunito';
     letter-spacing: 1px;
     scroll-behavior: smooth;
     position: relative;
@@ -28,6 +31,10 @@ body, html{
     color: rgb(84, 138, 255);
 
 }
+
+.control .fas{
+    font-size: 2vw;
+}
 .arrow:hover, .control a:hover{
     background-color: rgba(177, 208, 255,.5);
     cursor: pointer; 
@@ -41,12 +48,11 @@ body, html{
     color: rgb(227, 235, 242);
     font-weight: bolder;
     box-shadow: -1px 1px 12px -5px rgba(0,0,0,0.75); 
-    text-shadow: 3px 0px 7px #5B2718;
     font-size: 1vw;
 }
 .control a:hover{
     background-color: rgba(177, 208, 255,1);
- 
+    text-shadow: 3px 0px 7px #5B2718;
 }
 .control a:nth-child(1){
     top:40%;
@@ -62,11 +68,14 @@ body, html{
 }
 
 
+
+
+
 .main {
     width:100%;
     height:100%;
-    background: rgb(12,4,148);
-    background: linear-gradient(135deg, rgba(12,4,148,1) 0%, rgba(73,73,210,1) 35%, rgba(0,212,255,1) 100%);
+    background: rgb(20,7,143);
+    background: linear-gradient(135deg, rgba(20,7,143,1) 4%, rgba(40,89,156,1) 22%, rgba(52,143,223,1) 45%);
     overflow: hidden;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
@@ -79,16 +88,16 @@ body, html{
     background-color: rgba(255, 255, 255,0);
     padding: 10vw 7vw;
     text-shadow: 3px 0px 7px #5B2718;
-    animation: imageShow .3s ease;
+    animation: showAnim .3s ease;
 }
 .main-title h1{
     font-size: 3.5vw;
+    font-style: italic;
 }
 .sideCover {
     height:140%;
     width: 60%;
-    background: rgb(106,181,247);
-    background: linear-gradient(105deg, rgba(106,181,247,1) 0%, rgba(223,238,251,1) 66%); 
+    background: rgb(135, 199, 255);
     position: absolute;
     top:-9.5vw;
     right: -19vw;
@@ -96,10 +105,15 @@ body, html{
     animation: rotateCover 1s ease ;
     z-index: 3;
 }
+.logo{
+    border-radius: 15px;
+    background-color: rgb(173, 212, 254);
+    padding:3vw;
+
+}
 .logo img{
     height:5vw;
     width:20vw;
-
 }
 
 .two{
@@ -142,6 +156,7 @@ body, html{
 }
 
 .menu a{
+    text-align: center;
     transform: skewX(30deg);
     display: block;
     text-decoration: none;
@@ -246,17 +261,10 @@ body, html{
     transform: scale(1.05,1.05);
 }
 
-.masakan{
+.masakan, .minum, .kue{
     display: none;
 }
 
-.minum{
-    display: none;
-}
-
-.kue{
-    display: none;
-}
 
 
 
@@ -270,7 +278,6 @@ body, html{
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    
 }
 
 .second-title {
@@ -278,7 +285,7 @@ body, html{
     text-align: center;
     margin-bottom:10vw;
 }
-.second-title h1{
+.second-title h1, .history h1{
     font-size: 3vw;
     
 }
@@ -436,16 +443,19 @@ body, html{
 
 /* ------------------------------ THIRD --------------------------------- */
 .third{
-    height:200%;
+    height:170%;
     background: rgb(12,4,148);
     background: linear-gradient(135deg, rgba(12,4,148,1) 0%, rgba(73,73,210,1) 35%, rgba(0,212,255,1) 100%);
-    clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     position: relative;
+}
+.third-container{
+    padding: 10vw 0;
 }
 .third h1, .third h3 ,.third h4{
     font-size: 3vw;
@@ -578,4 +588,47 @@ body, html{
 
 .footer-mobile{
     display: none;
+}
+
+
+
+/* --------------------------------HISTORY------------------------------ */
+.history{
+    height:100%;
+    width: 100%;
+    background: rgb(12,4,148);
+    background: linear-gradient(135deg, rgba(12,4,148,1) 0%, rgba(73,73,210,1) 35%, rgba(0,212,255,1) 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+    
+}
+.history-container{
+    height:100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    color: rgb(227, 235, 242);
+}
+.hist{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.hist .hist-text{
+    width: 80%;
+    height: auto;
+    text-align: center;
+}
+
+.hist i{
+    display: block;
+    font-size: 20vw;
+}
+.h2,.h3{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
 }
