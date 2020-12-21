@@ -102,12 +102,10 @@ const checkVis = function(element){
 let f1 = document.querySelector("#f1");
 let f2 = document.querySelector("#f2");
 let f3 = document.querySelector("#f3");
-let foo_cont = document.querySelector(".third-container");
 let footer = document.querySelector(".logo-footer img");
 let foot = document.querySelector(".footer")
 
 document.addEventListener('scroll', function(){
-    console.log(foo_cont.getBoundingClientRect().top);
     if(checkVis(f3)){
         f3.style.visibility = "visible"
         f3.style.opacity = "1"

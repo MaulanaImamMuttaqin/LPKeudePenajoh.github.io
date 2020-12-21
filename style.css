@@ -443,10 +443,11 @@ body, html{
 
 /* ------------------------------ THIRD --------------------------------- */
 .third{
-    height:170%;
+    height:100%;
+    width: 100%;
     background: rgb(12,4,148);
     background: linear-gradient(135deg, rgba(12,4,148,1) 0%, rgba(73,73,210,1) 35%, rgba(0,212,255,1) 100%);
-    clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
     text-align: center;
     display: flex;
     align-items: center;
@@ -497,6 +498,59 @@ body, html{
     box-shadow: none;
 }
 
+
+
+/* --------------------------------HISTORY------------------------------ */
+.history{
+    height:150%;
+    background: rgb(12,4,148);
+    background: linear-gradient(135deg, rgba(12,4,148,1) 0%, rgba(73,73,210,1) 35%, rgba(0,212,255,1) 100%);
+    clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
+    text-align: center;
+    position: relative;
+
+    
+}
+.history-container{
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    color: rgb(227, 235, 242);
+}
+.third-title{
+    position: absolute;
+    top:10%;
+}
+.hist{
+    position: absolute;
+    top:20%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.hist .hist-text{
+    width: 80%;
+    height: auto;
+    text-align: center;
+}
+
+.hist i{
+    display: block;
+    font-size: 20vw;
+}
+.h2,.h3{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
+/* footer */
 .footer{
     position: absolute;
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
@@ -590,45 +644,3 @@ body, html{
     display: none;
 }
 
-
-
-/* --------------------------------HISTORY------------------------------ */
-.history{
-    height:100%;
-    width: 100%;
-    background: rgb(12,4,148);
-    background: linear-gradient(135deg, rgba(12,4,148,1) 0%, rgba(73,73,210,1) 35%, rgba(0,212,255,1) 100%);
-    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
-    
-}
-.history-container{
-    height:100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    color: rgb(227, 235, 242);
-}
-.hist{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-}
-.hist .hist-text{
-    width: 80%;
-    height: auto;
-    text-align: center;
-}
-
-.hist i{
-    display: block;
-    font-size: 20vw;
-}
-.h2,.h3{
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-}
