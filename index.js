@@ -33,9 +33,27 @@ const checkVis = function(element){
     );
 }
 
+let pos = 1
+function historyAr(dir){
+    pos = pos+dir
+    if(pos > 3){
+        pos = 1
+    }else if(pos < 1){
+        pos = 3
+    }
+    let hist = document.querySelectorAll(".hist");
+    hist.forEach(x => {
+        if(x.id === `h${pos}`){
+           x.style.display ="block"
+        }
+        else{
+            x.style.display ="none"
+        }
+    })
 
+}
 
-let f1 = document.querySelector("#f1");
+let f1 = document.querySelector("#f1"); 
 let f2 = document.querySelector("#f2");
 let f3 = document.querySelector("#f3");
 let footer = document.querySelector(".logo-footer img");

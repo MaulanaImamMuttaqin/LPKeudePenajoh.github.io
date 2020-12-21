@@ -563,15 +563,32 @@ body, html{
 .hist i{
     display: block;
     font-size: 20vw;
+    margin:3vw;
 }
-.h2,.h3{
+.h2,.h3 {
     display: none;
-    visibility: hidden;
-    opacity: 0;
 }
-
-
-
+.history-arrow .fas{
+    font-size: 4vw;
+    color: rgb(211, 221, 244);
+    position: absolute;
+    top:40%;
+    transform:translate(-50%,-50%);
+  
+}
+.history-arrow .fas:hover{
+    color: rgb(137, 172, 255);
+    cursor:pointer;
+}
+.history-arrow .fas:active{
+    font-size: 3.9vw;
+}
+#left{
+    left:20%;
+}
+#right{
+    right:20%;
+}
 /* footer */
 .footer{
     position: absolute;

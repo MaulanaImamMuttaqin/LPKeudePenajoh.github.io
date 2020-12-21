@@ -68,11 +68,18 @@
         opacity: 1;
     }
 }
-@keyframes safeAnimation{
-    from{
-        
+
+@keyframes removeAnim{
+    from {
+        left:0;
+        opacity: 1;
+    }
+    to {
+        left:-30px;
+        opacity: 0.5;
     }
 }
+
 
 
 @media screen and (max-width : 1040px){
