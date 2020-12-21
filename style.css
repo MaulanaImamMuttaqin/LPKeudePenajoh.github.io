@@ -13,7 +13,7 @@ body, html{
 
 /* ------------------------------ MAIN --------------------------------- */
 
-.arrow, .control a{
+.arrow{
     width:5vw;
     height: 5vw;
     display: flex;
@@ -22,8 +22,7 @@ body, html{
     border-radius: 50%;
     position: fixed;
     top:50%;
-    left: -2vw;
-    z-index: 1;
+    z-index: 2;
     transition: all .3s;
 }
 .arrow .fas{
@@ -31,7 +30,6 @@ body, html{
     color: rgb(84, 138, 255);
 
 }
-
 .control .fas{
     font-size: 2vw;
 }
@@ -40,34 +38,58 @@ body, html{
     cursor: pointer; 
 }
 
+.control{
+    position: fixed;
+    z-index: 1;
+    width:25vw;
+    height: 25vw;
+    border-radius: 50%;
+    top: 30%;
+    left:-11%;
+    transform: rotate(-180deg);
+    transition: transform .5s;
+    
+}
+.control-container{
+    position: relative;
+    width:100%;
+    height:100%;
+}
 .control a{
-    opacity: 0;
-    visibility: hidden;
-    transition: all .3s;
-    text-decoration: none;
-    color: rgb(227, 235, 242);
-    font-weight: bolder;
+    width:5vw;
+    height: 5vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
     box-shadow: -1px 1px 12px -5px rgba(0,0,0,0.75); 
     font-size: 1vw;
+    background-color: rgba(177, 208, 255,1);
 }
 .control a:hover{
     background-color: rgba(177, 208, 255,1);
     text-shadow: 3px 0px 7px #5B2718;
 }
+.arrow:hover{
+    text-shadow: 3px 0px 7px #5B2718;
+}
 .control a:nth-child(1){
-    top:40%;
-    left:3vw;
+    top:20%;
+    right:10%;
+    color:white;
 }
 .control a:nth-child(2){
     top:50%;
-    left:7vw;
+    left:90%;
+    color:white;
 }
 .control a:nth-child(3){
-    top:60%;
-    left:3vw;
-}
-
-
+    top:80%;
+    right:10%;
+    color:white;
+} 
 
 
 
