@@ -1,17 +1,27 @@
 @media screen and (max-width : 1040px){
   
     .arrow, .control a{
-        width:12vw;
-        height:12vw;
+        width:10vw;
+        height:10vw;
+        background-color: rgb(159, 189, 252);
     }
     .arrow .fas{
         font-size: 7vw;
+        
+    }
+    .control{
+        position: fixed;
+        z-index: 1;
+        width:45vw;
+        height: 45vw;
+        border-radius: 50%;
+        top: 37%;
+        left:-20%;
+        transform: rotate(-180deg);
+        transition: transform .5s;
+        
+    }
     
-    }
-    .control a{
-        font-size: 3vw;
-    }
-
     .main-title{
        padding: 25vw 3vw;
     }
@@ -155,14 +165,13 @@
     }
 
     /* footer */
-    .third .footer{
+    .history .footer{
         display: none;
     }
     .footer-mobile{
         display:block;
         height: auto;
         margin-top: 10vw;
-        border-top:1px solid rgba(0, 0, 0, 0.598);
         
     }
     .footer-mobile P, .footer-mobile h3 , .footer-mobile i{
@@ -211,21 +220,38 @@
     .mob-social-media .fa-linkedin-in{
         color: #0000EE;
     }
+     /* history */
+     .history{
+        height:100%;
+    }
+    .history-arrow .fas{
+        font-size: 8vw;
+        top:30%;
+    }
+    .history-arrow .fas:active{
+        font-size:7.9vw;
+    }
 }
 @media screen and (max-width : 480px){
 
     .arrow, .control a{
-        width:13vw;
-        height:13vw;
+        width:15vw;
+        height:15vw;
     }
     .arrow .fas{
         font-size: 7vw;
     
     }
+    .control{
+        height:70vw;
+        width:70vw;
+        top:34%;
+        left:-35%;
+    }
     .control a{
         font-size: 3vw;
     }
-    .main-title, .two, .logo-feature .fas{
+    .two, .logo-feature .fas{
         display: none;
     }
     .logo{
@@ -321,7 +347,6 @@
         display:block;
         height: auto;
         margin-top: 10vw;
-        border-top:1px solid rgba(0, 0, 0, 0.598);
         
     }
     .footer-mobile P, .footer-mobile h3 , .footer-mobile i{
@@ -340,9 +365,7 @@
         width:40vw;
         
     }
-    .footer-mobile, .mob-social-media, .mob-hubungi, .mob-tutorial, .mob-tentang{
-        
-    }
+
     .mob-social-media, .mob-hubungi, .mob-tutorial, .mob-tentang{
         text-align: center;
         margin:15vw 0;
@@ -363,5 +386,28 @@
     .mob-social-media .fa-linkedin-in{
         color: #0000EE;
     }
-    
+
+    /* history */
+    .history{
+        height:100%;
+    }
+    .third-title h1{
+        font-size: 7vw;
+    }
+    .hist{
+
+        top:40%; 
+    }
+    .history-arrow .fas{
+        font-size: 8vw;
+        top:50%;
+    }
+    .history-arrow .fas:active{
+        font-size:7.9vw;
+    }
+    .history-arrow .fas:hover{
+        color: rgb(137, 172, 255);
+        cursor:pointer;
+    }
 }
+

@@ -34,7 +34,9 @@ const checkVis = function(element){
 }
 
 let pos = 1
+
 function historyAr(dir){
+    console.log(dir)
     pos = pos+dir
     if(pos > 3){
         pos = 1
